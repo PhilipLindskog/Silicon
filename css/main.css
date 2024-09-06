@@ -3,7 +3,9 @@
 :root {
     --color-dark: #0B0F19;
     --color-primary: #6366F1;
-    --color-gray6: #9397AD;
+    --color-gray-3: #E2E5F1;
+    --color-gray-5: #B4B7C9;
+    --color-gray-6: #9397AD;
     --color-white: #fff;
 
     --container-padding: 1rem;
@@ -64,7 +66,7 @@ a:hover {
     text-decoration: none;
 }
 .btn-primary:hover {
-    background-color: var(--color-gray6);
+    background-color: var(--color-gray-6);
     color: var(--color-white);
     text-decoration: none;
 }
@@ -120,7 +122,7 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--color-gray6);
+    background-color: var(--color-gray-6);
     transition: all 0.2s;
 }
 
@@ -179,7 +181,7 @@ footer {
     font-size: 14;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    color: var(--color-gray6);
+    color: var(--color-gray-6);
 
     .container {
         display: flex;
@@ -191,6 +193,29 @@ footer {
     .credit {
         display: none;
     }
+}
+
+#brands {
+    display: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.brand-box {
+    border: 1px solid var(--color-gray-3);
+    border-radius: 8px;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -214,6 +239,14 @@ footer {
             display: block;
         }
     }
+
+    #brands {
+        display: block;
+    }
+
+    #brand-5, #brand-6 {
+        display: none;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -236,5 +269,9 @@ footer {
 
     .btn-mobile {
         display: none;
+    }
+
+    #brand-5, #brand-6 {
+        display: flex;
     }
 }
