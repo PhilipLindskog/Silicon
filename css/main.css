@@ -3,6 +3,7 @@
 :root {
     --color-dark: #0B0F19;
     --color-primary: #6366F1;
+    --color-grey-1: #F3F6FF;
     --color-gray-3: #E2E5F1;
     --color-gray-5: #B4B7C9;
     --color-gray-6: #9397AD;
@@ -459,6 +460,79 @@ footer {
         }
     }
 }
+
+
+
+
+
+
+#how {
+    background-color: var(--color-grey-1);
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headline {
+        text-align: center;
+
+        h2 {
+            font-size: 27.9px;
+            font-weight: 800;
+        }
+
+        h3 {
+            font-size: 21.6;
+            font-weight: 800;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 160;
+            color: var(--color-grey-7);
+            margin-bottom: 3rem;
+        }
+    }
+    
+    .images {
+        position: relative;
+        height: 500px;
+
+        .img-left{
+            display: none;
+        }
+        .img-right {
+            display: none;
+        }
+        .img-middle{
+            position: absolute;
+            align-items: center;
+            justify-items: center;
+            height: auto;
+        }
+        .img-frame{
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+        }
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .desk-headline {
+        display: none;
+    }
+
+}
+
+
+
+
+
 
 
 
