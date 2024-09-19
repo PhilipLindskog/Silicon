@@ -468,15 +468,16 @@ footer {
 
 #how {
     background-color: var(--color-grey-1);
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 
     .container {
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
     .headline {
-        text-align: center;
-
         h2 {
             font-size: 27.9px;
             font-weight: 800;
@@ -485,31 +486,44 @@ footer {
         h3 {
             font-size: 21.6;
             font-weight: 800;
-        }
+        }   
+    }
 
-        p {
-            font-size: 16px;
-            font-weight: 160;
-            color: var(--color-grey-7);
-            margin-bottom: 3rem;
-        }
+    p {
+        font-size: 16px;
+        font-weight: 160;
+        color: var(--color-grey-7);
+        
     }
     
     .images {
+        display: flex;
         position: relative;
-        height: 500px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
 
         .img-left{
             display: none;
+
+            @media (min-width: 768px) {
+                display: block;
+            }
         }
         .img-right {
             display: none;
+
+            @media (min-width: 768px) {
+                display: block;
+            }
         }
+
         .img-middle{
-            position: absolute;
             align-items: center;
             justify-items: center;
             height: auto;
+            
         }
         .img-frame{
             position: absolute;
@@ -518,15 +532,6 @@ footer {
             height: auto;
         }
     }
-
-    .content {
-        text-align: center;
-    }
-
-    .desk-headline {
-        display: none;
-    }
-
 }
 
 
