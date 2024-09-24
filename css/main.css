@@ -59,6 +59,10 @@ a:hover {
     text-decoration: underline;
 }
 
+ol, ul {
+    list-style: none;
+}
+
 
 
 .btn-primary {
@@ -608,7 +612,11 @@ footer {
         font-size: 1rem;
         font-weight: 400;
         color: var(--color-grey-7);
-        
+    }
+
+    .text {
+        max-width: 70ch;
+        margin-inline: auto;
     }
     
     .images {
