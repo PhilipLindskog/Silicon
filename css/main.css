@@ -586,7 +586,7 @@ footer {
 #how {
     background-color: var(--color-grey-1);
     padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
 
     .container {
         display: flex;
@@ -657,6 +657,164 @@ footer {
     }
 }
 
+#faq {
+
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 4rem;
+    }
+
+    .headline {
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 800;
+        }
+
+        p {
+            color: var(--color-grey-7);
+            font-size: 1.125em;
+        }
+    }
+
+
+    .card-faq {
+        border: 1px solid var(--color-grey-1);
+        border-radius: 8px;
+        display: flex;
+        padding-inline: 1rem;
+        justify-content: space-between;
+        height: auto;
+        width: auto;
+        gap: 1rem;
+        align-items: center;
+
+        
+
+        h4 {
+            text-align: left;
+            font-size: 1rem;
+            font-weight: 600;
+            
+        }
+
+        .btn-faq{
+          padding-inline: 1rem;
+          background-color: var(--color-grey-1);  
+        }
+
+        .btn-faq:hover {
+            background-color: var(--color-primary);
+        }
+
+        
+    }
+
+    .faq-open{
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+
+    .contact {
+        display: flex;
+        gap: 1rem;
+        padding-bottom: 1rem;
+        margin: auto;
+    }
+    .contact-box {
+        display: none;
+        border: 1px solid var(--color-gray-3);
+        border-radius: 8px;
+        height: auto;
+        width: auto;
+        
+    }
+
+    .contact-btn {
+        padding-bottom: 3rem;
+    
+    }
+
+    @media (min-width: 768px) {
+
+        .container {
+            max-width: 720px;
+            margin-top: 3rem;
+        }
+
+        .headline{
+            h2 {
+                max-width: 45vw;
+                margin-inline: auto;
+            }
+            p {
+                max-width: 50vw;
+                margin-inline: auto;
+            }
+        }
+
+        .card-faq {
+            width: 90vw;
+            margin: 1rem;
+            box-shadow: 0 4px 4px var(--color-gray-2) ;
+        }
+        
+        .contact-box{
+            display: block;
+            justify-content: flex-start;
+            height: 166px;
+            width: 343px;
+            padding-top: 2.5rem;
+            padding-inline: 1rem;
+            text-align: left;
+            margin: auto;
+        }
+
+        .contact-btn{
+            display: none;
+        }
+        
+    }
+
+    @media (min-width:1400px) {
+        
+      .container {
+        
+        max-width: 1320px;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 2fr 3fr;
+        
+        
+      }
+
+      .headline {
+        grid-area: 1 / 1;
+        width: 100%;
+        text-align: left;
+        translate: 0 -180px;
+      }
+
+      .card-faq {
+        grid-area: 1 / 2 ;
+        width: 100%;
+      }
+
+      .contact-box{
+        
+        width: 196px;
+        height: 166px;
+        translate: 0 -300px;
+        
+      }
+    }
+
+}
 
 
 
