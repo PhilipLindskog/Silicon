@@ -814,6 +814,71 @@ footer {
 
 }
 
+#features-more {
+    display: none;
+
+    .container {
+        max-width: 1320px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 4rem;
+    }
+
+    h2{
+        font-size: 2rem;
+        font-weight: 800;
+        max-width: 80%;
+    }
+
+    a {
+        gap: .3em;
+        height: 44px;
+        width: 160px;
+        display: flex;
+    }
+    
+    ul{
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+    }
+
+    p {
+        color: var(--color-grey-7);
+        padding-top: 1rem;
+    }
+
+    .flex-box {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .text-box{
+       width: 240px;
+       padding-bottom: 2rem;
+    }
+
+    .square {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    @media (min-width:1400px) {
+        display: block;
+        
+    }
+}
+
+#testimonials {
+    background-color: var(--color-grey-1);
+    height: 100px;
+}
 
 #subscribe {
 
