@@ -624,34 +624,69 @@ footer {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 3rem;
-
-        .img-left{
-            display: none;
-
-            @media (min-width: 768px) {
-                display: block;
-            }
-        }
-        .img-right {
-            display: none;
-
-            @media (min-width: 768px) {
-                display: block;
-            }
-        }
-
+        padding: 1rem;
+        
+        
         .img-middle{
             align-items: center;
             justify-items: center;
-            height: 100%;
-            width: auto;
+            height: auto;
+            width: 80%;
         }
-        .img-frame{
-            position: absolute;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
+
+        .img-left{
+            display: none;
+        }
+
+        .img-right {
+            display: none;
+        }
+        
+        @media (min-width:768px) {
+            .container {
+                max-width: 720px;
+            }
+
+            .img-middle {
+                width: 35%;
+            }
+            .img-left {
+                display: block;
+                height: auto;
+                width: 35%;
+            }
+            .img-right {
+                display: block;
+                height: auto;
+                width: 35%;
+            }
+        }
+
+        @media (min-width:1400px) {
+            .container {
+                max-width: 1320px;
+            }
+
+            .img-middle {
+                width: 25%;
+                height: auto;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
+            .img-left {
+                width: 25%;
+                height: auto;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
+            .img-right {
+                width: 25%;
+                height: auto;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
         }
     }
 }
@@ -686,6 +721,7 @@ footer {
 
     li {
         display: flex;
+        padding: .6em;
     }
 
     p {
@@ -701,6 +737,10 @@ footer {
     .text-box{
        width: 240px;
        padding-bottom: 2rem;
+    }
+
+    .box-move {
+        transform: translateY(25px);
     }
 
     .square {
