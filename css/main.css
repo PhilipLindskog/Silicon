@@ -2,14 +2,14 @@
 
 :root {
     --color-dark: #0B0F19;
-    --color-grey-1: #F3F6FF;
+    --color-gray-1: #F3F6FF;
     --color-gray-2: #EFF2FC;
     --color-gray-3: #E2E5F1;
     --color-gray-4: #D4D7E5;
     --color-gray-5: #B4B7C9;
     --color-gray-6: #9397AD;
-    --color-grey-7: #565973;
-    --color-grey-8: #33354D;
+    --color-gray-7: #565973;
+    --color-gray-8: #33354D;
     --color-white: #fff;
     
     --color-primary: #6366F1;
@@ -34,6 +34,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
+    background-color: var(--color-white);
 }
 
 .wrapper {
@@ -326,7 +327,7 @@ footer {
 
 
 #hero {
-    background: rgb(99,102,241);
+    background: var(--color-primary);
     background: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
     padding-bottom: 2rem;
 
@@ -386,7 +387,7 @@ footer {
         p {
             font-size: 1.125rem;
             font-weight: 400;
-            color: var(--color-grey-7);
+            color: var(--color-gray-7);
             margin-bottom: 3rem;
         }
 
@@ -401,7 +402,7 @@ footer {
         }
 
         .discover-more {
-            color: var(--color-grey-7);
+            color: var(--color-gray-7);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -528,7 +529,7 @@ footer {
     .text {
         font-size: 1rem;
         font-weight: 400;
-        color: var(--color-grey-7);
+        color: var(--color-gray-6);
         
     }
 
@@ -583,7 +584,7 @@ footer {
 }
 
 #how {
-    background-color: var(--color-grey-1);
+    background-color: var(--color-gray-1);
     padding-top: 2rem;
     padding-bottom: 4rem;
 
@@ -610,7 +611,7 @@ footer {
     p {
         font-size: 1rem;
         font-weight: 400;
-        color: var(--color-grey-7);
+        color: var(--color-gray-7);
     }
 
     .text {
@@ -725,7 +726,7 @@ footer {
     }
 
     p {
-        color: var(--color-grey-7);
+        color: var(--color-gray-7);
         padding-top: 1rem;
     }
 
@@ -759,7 +760,7 @@ footer {
 
 #testimonials {
     display: none;
-    background-color: var(--color-grey-1);
+    background-color: var(--color-gray-1);
     padding-top: 3rem;
     padding-bottom: 3rem;
     
@@ -801,14 +802,14 @@ footer {
         }
 
         p {
-            color: var(--color-grey-7);
+            color: var(--color-gray-7);
             font-size: 1.125em;
         }
     }
 
 
     .card-faq {
-        border: 1px solid var(--color-grey-1);
+        border: 1px solid var(--color-gray-1);
         border-radius: 8px;
         display: flex;
         padding-inline: 1rem;
@@ -829,7 +830,7 @@ footer {
 
         .btn-faq{
           padding-inline: 1rem;
-          background-color: var(--color-grey-1);  
+          background-color: var(--color-gray-1);  
         }
 
         .btn-faq:hover {
@@ -960,7 +961,7 @@ footer {
     .container{
         display: flex;
         flex-direction: column;
-        background-color: var(--color-grey-1);
+        background-color: var(--color-gray-1);
         border: none;
         border-radius: 8px;
         width: 95vw;
